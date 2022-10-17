@@ -1,1 +1,133 @@
 
+body{
+  background-color: rgb(54, 52, 59);
+}
+.social{
+
+}
+#works img{
+  border-radius: 5%;
+  border: 1px solid antiquewhite;
+}
+#works img:hover{
+  opacity: 0.4;
+}
+.work-container{
+  position: relative;
+}
+.work-container .work-text{
+  background-color: rgb(54, 52, 59);
+  padding: 2%;
+  margin-left: 2px;
+  color:gray;
+  position: absolute;
+  bottom: 10px;
+
+}
+
+
+.custom-nav{
+  background-color: black;
+  border-bottom: 1px solid whitesmoke;
+  color:antiquewhite;
+}
+.custom-jumbotron{
+  background-color: rgb(35, 31, 31);
+  color: antiquewhite;
+}
+
+.img_container {
+  position: relative;
+  /* width: 360px;
+  height: 640px; */
+  /* margin-top: 150px; */
+  background: rgba(0, 0, 0, 0);
+  /* transform: rotate(-30deg) skew(25deg) scale(0.8); */
+  transition: 0.5s;
+}
+.img_container img {
+  position: absolute;
+  /* width: 100%; */
+  transition: 0.5s;
+}
+.img_container:hover img:nth-child(4) {
+  transform: translate(160px, 0);
+  opacity: 1;
+}
+.img_container:hover img:nth-child(3) {
+  transform: translate(120px, 0);
+  opacity: 0.8;
+}
+.img_container:hover img:nth-child(2) {
+  transform: translate(80px, 0);
+  opacity: 0.6;
+}
+.img_container:hover img:nth-child(1) {
+  transform: translate(40px, 0);
+  opacity: 0.4;
+}
+
+
+
+.typewriter p {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+h1 {
+  font-family: "Montserrat Medium";
+  max-width: 40ch;
+  text-align: center;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(2) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(3) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+ 
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}

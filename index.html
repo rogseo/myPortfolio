@@ -17,26 +17,40 @@
   <body>
 
     <header>
-      <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+      <nav class="navbar-dark navbar-expand-lg custom-nav">
+        <div class="container-lg">
+          <div class="collapse navbar-collapse row" id="navbarNav">
+            <ul class="navbar-nav col-8">        
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#works">Works</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+                <a class="nav-link" href="#resume">Resume</a>
               </li>
+            </ul>
+                
+            <ul class="navbar-nav col-4 justify-content-end">              
+                <li class="nav-item social">
+                  <a class="nav-link" href="https://github.com/rogseo"><img
+                      src="./assets/image/1298743_github_git_logo_social_icon.png"
+                      alt="github"></a>
+                </li>
+                <li class="nav-item social">
+                  <a class="nav-link"
+                    href="https://www.linkedin.com/in/seo-yeon-6267b3158/"><img
+                      src="./assets/image/291709_logo_linked in_social network_social_social media_icon (3).png" alt="linkedin"></a>
+                </li>
+                <li class="nav-item social">
+                  <a class="nav-link" href="mailto:rogseo@gmail.com"><img
+                      src="./assets/image/7123031_mail_google_gmail_icon.png"
+                      alt="gmail"></a>
+                </li>
             </ul>
           </div>
         </div>
@@ -44,12 +58,65 @@
     </header>
 
     <main>
-     
+      <div class="jumbotron jumbotron-fluid custom-jumbotron" id="about">
+        <div class="container-lg">
+          <div class="row">
+            <div class="col-8 typewriter">
+              <h1 class="display-4"><span>about.</span></h1>
+              <h2><span>I am a web developer</span></h2>
+              <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.<br>This is a modified jumbotron that occupies the entire horizontal space of its parent.<br>This is a modified jumbotron that occupies the entire horizontal space of its parent.</p> 
+            </div> 
+            <div class="col-4 img_container">
+              <img src="assets/image/mypicture.png" alt="my picture" height="400px" width="300px">
+              <img src="assets/image/mypicture.png" alt="my picture" height="400px" width="300px">
+              <img src="assets/image/mypicture.png" alt="my picture" height="400px" width="300px">
+              <img src="assets/image/mypicture.png" alt="my picture" height="400px" width="300px">
+            </div>  
+          </div>      
+        </div>       
+      </div>
+      <div class="container-lg mt-5" id="works">
+        <div class="row">
+          <article class="col-6 mb-3 work-container">
+            <img src="./assets/image/Movies and more.GIF" alt="movie-more">
+            <div class="work-text">
+              <h4>Movie&more</h4>
+              <p>HTML/CSS/Javascript/API/Foundation</p>
+            </div>
+          </article>
+          <article class="col-6 mb-3 work-container">
+            <img src="./assets/image/Project Tracker.GIF" alt="weatherDashboard">
+            <div class="work-text">
+              <h4>weather Dashboard</h4>
+              <p>HTML/CSS/Javascript/API/Bootstrap</p>
+            </div>
+          </article>
+          <article class="col-6 mb-3 work-container">
+            <img src="./assets/image/Password Generator.GIF" alt="passwordGenerator">
+            <div class="work-text">
+              <h4>Password Generator</h4>
+              <p>HTML/CSS/Javascript</p>
+            </div>
+          </article>
+          <article class="col-6 mb-3 work-container">
+            <img src="./assets/image/Movies and more.GIF" alt="movie-more">
+            <div class="work-text">
+              <h4>Movie&more</h4>
+              <p>HTML/CSS/Javascript/API</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+      
+      
+
+
 
     </main>
 
     <footer>
-      
+
     </footer>
 
 
