@@ -1,39 +1,60 @@
 
-body{
-  background-color: rgb(54, 52, 59);
+:root{
+  --font-sans: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+  --font-mono: "SF Mono","Fira Code";
+  --color1:#f8eff4;
+  --color2:#c3195d;
+  --color3:#680747;
+  --color4:#141010;
+  background-color: var(--color4);
+  font-family: var(--font-sans);
 }
-.social{
+main {
+  background-color: var(--dark);
+  color:var(--light);
+}
 
-}
-#works img{
+
+/* #works img{
   border-radius: 5%;
-  border: 1px solid antiquewhite;
+} */
+.card {
+  margin: 10px;
+  background-color: var(--dark);
+  border-radius: 10px;
+  box-shadow: 0px 2px 20px #121212;
+  overflow: hidden;
+  width: 300px;
 }
-#works img:hover{
-  opacity: 0.4;
+.card-header img {
+  border-radius: 10px;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
-.work-container{
-  position: relative;
+.card-body {
+  /* display: flex; */
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  /* min-height: 250px; */
 }
-.work-container .work-text{
-  background-color: rgb(54, 52, 59);
-  padding: 2%;
-  margin-left: 2px;
-  color:gray;
-  position: absolute;
-  bottom: 10px;
+.card-footer a:hover img{
+  opacity: 40%;
+}
 
-}
 
 
 .custom-nav{
   background-color: black;
   border-bottom: 1px solid whitesmoke;
-  color:antiquewhite;
+  color:var(--color2);
+  font-size: 200%;
 }
 .custom-jumbotron{
   background-color: rgb(35, 31, 31);
-  color: antiquewhite;
+  color: var(--color1);
 }
 
 .img_container {
@@ -70,15 +91,16 @@ body{
 
 
 .typewriter p {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
+  font-size: 80%;
+  overflow: hidden; /*Ensures the content is not revealed until the animation*/
+  /* border-right: .15em solid orange; The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   animation: 
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
-}
+} 
 
 /* The typing effect */
 @keyframes typing {
